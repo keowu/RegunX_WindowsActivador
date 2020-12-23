@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>494</width>
+    <height>414</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Regun X</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #374046;
+color: white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>461</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="0">
+         <widget class="QCheckBox" name="chk_customkey">
+          <property name="text">
+           <string>Use Custom Key</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QCheckBox" name="chk_customkms">
+          <property name="text">
+           <string>Use custom KMS server</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Options:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QCheckBox" name="chk_usekeyfromdb">
+          <property name="text">
+           <string>Use Key from DB</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QCheckBox" name="chk_usestandardkms">
+          <property name="text">
+           <string>Use Standard KMS server</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="gridLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>70</y>
+         <width>471</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="edt_kms">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+/* background-color:rgb(202, 255, 227);*/
+border: 2px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+/*selection-background-color: darkgray;*/
+font-size: 16px;}
+/*
+QLineEdit:focus {
+ background-color:rgb(192, 192, 255)
+;}*/</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Custom KMS:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="edt_key">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+/* background-color:rgb(202, 255, 227);*/
+border: 2px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+/*selection-background-color: darkgray;*/
+font-size: 16px;}
+/*
+QLineEdit:focus {
+ background-color:rgb(192, 192, 255)
+;}*/</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>KEY:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="gridLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>140</y>
+         <width>321</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="2" column="0" colspan="2">
+         <widget class="QComboBox" name="cbo_winversion">
+          <item>
+           <property name="text">
+            <string>¯\_(ツ)_/¯</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Home Single Language</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Home Edition</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Pro</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Workstations</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Pro N for Workstations</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Education</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Education N </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Enterprise</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Enterprise G</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Enterprise G N</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Enterprise N</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Enterprise S</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Enterprise LTSC 2019</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Enterprise N LTSC 2019</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows Server 2019 Datacenter</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows Server 2019 Standard</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows Server 2019 Essentials</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Windows 10 Enterprise LTSB 2016</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Select Window Version Options:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QCheckBox" name="chk_accept">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>250</y>
+         <width>371</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>I accept and declare that the developers are not to blame for my actions.</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnactivate">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>300</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: #2196f3;
+border-style: outside;
+border-radius: 10px;
+color: white;
+}
+QPushButton:hover{
+	background-color: white;
+	color: black;
+    border: 1px solid black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Activate Windows 10</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>360</y>
+         <width>241</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Build: 1.0 | www.github.com/keowu</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="rsrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
