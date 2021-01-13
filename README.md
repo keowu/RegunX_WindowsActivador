@@ -1,6 +1,5 @@
 
 # RegunX_WindowsActivador
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 A software that activates your windows 10 safely via KMS Bypass.
   - Quick
